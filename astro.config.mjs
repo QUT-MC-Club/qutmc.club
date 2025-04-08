@@ -6,9 +6,16 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'QUT MC Club',
 			social: {
+				discord: 'https://github.com/withastro/starlight',
 				github: 'https://github.com/withastro/starlight',
+			},
+			components: {
+				Hero: './src/components/Hero.astro',
+			},
+			expressiveCode: {
+				styleOverrides: { borderRadius: '0.5rem' },
 			},
 			sidebar: [
 				{
@@ -25,4 +32,12 @@ export default defineConfig({
 			],
 		}),
 	],
+	redirects: {
+		"/discord": "https://discord.gg/YXYtac2y2D",
+		"/facebook": "https://www.facebook.com/qutmc/",
+		"/instagram": "https://www.instagram.com/qutminecraft/",
+		"/twitch": "https://discord.gg/YXYtac2y2D",
+		"/modrinth": "https://discord.gg/YXYtac2y2D",
+		"/github": "https://discord.gg/YXYtac2y2D"
+	}
 });
