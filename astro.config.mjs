@@ -27,6 +27,14 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Minigames',
+					autogenerate: { directory: 'minigames' },
+				},
+				{
+					label: 'Minigames',
+					autogenerate: { directory: 'minigames' },
+				},
+				{
 					label: 'Modding',
 					autogenerate: { directory: 'modding' },
 				},
