@@ -1,0 +1,41 @@
+---
+title: Mobile
+description: A reference page in my new Starlight docs site.
+---
+
+import { Card, CardGrid, Badge, LinkButton, Aside, Tabs, TabItem, LinkCard } from '@astrojs/starlight/components';
+
+## Reccomended Mod Launchers
+<CardGrid>
+  <Card title="Pojav Launcher">
+    <Badge text="Android" variant="note" /><Badge text="IOS" variant="note" />
+    A flexible, fast and open-source Minecraft Java Edition launcher for Android and iOS 
+
+    **Supported Mod Providers**
+    - Modrinth
+
+    <LinkButton href="https://pojavlauncher.app/wiki/getting_started/INSTALL.html" icon="external" iconPlacement="start">Download</LinkButton>
+  </Card>
+  <Card title="QuestCraft">
+    <Badge text="Virtual Reality" variant="note" />
+    QuestCraft, utilizing Vivecraft and Pojlib, is a standalone port of Minecraft: Java Edition to Meta Quest Headsets.
+
+    **Supported Mod Providers**
+    - Modrinth
+
+    <LinkButton href="https://questcraft.org/" icon="external" iconPlacement="start">Download</LinkButton>
+  </Card>
+</CardGrid>
+<LinkCard title="Desktop Launchers (Windows, Mac, Linux)" href="./mod-launchers"/>
+
+## Usage of Mobile Mod Launchers
+
+<Aside type="caution">Both Pojav and Questcraft do not default to the latest version of minecraft for performance reasons. To play on QUTMC you will need to install the latest version but be aware that if you have low end mobile devices you may not be able to run the game.</Aside>
+
+Mobile launchers are generally more complicated then desktop launchers and can be heavily dependant upon the users hardware.
+
+Fortunately Pojav has extensive documentation: [Pojav Wiki](https://pojavlauncher.app/wiki/)
+
+Due to the complicated nature of these projects, contacting their discord for community help is reccomended if you have issues:
+- [Pojav Discord](https://discord.gg/EWsqVSuwGa)
+- [Questcraft Discord](https://discord.gg/questcraft)

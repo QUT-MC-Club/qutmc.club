@@ -19,15 +19,16 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Start Here',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Introduction', slug: 'start/introduction' },
+						{ label: 'Joining', slug: 'start/joining' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Modding',
+					autogenerate: { directory: 'modding' },
 				},
 			],
 		}),
