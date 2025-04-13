@@ -15,6 +15,7 @@ hero:
       link: https://qutmc.tebex.io
       icon: external
 ---
+import Steve from '../../public/steve.webm';
 
 import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
 
@@ -36,7 +37,7 @@ import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
     Experience as little latency possible and the Minigames and Survival experience you have come to expect from larger servers.
   </Card>
   <Card title="In Person Events" icon="star">
-    <video autoplay loop muted src="src/assets/steve.webm" />
+    <video autoplay loop muted src={Steve} />
     We run in person events in the club such as watching "A Minecraft Movie". We are always planning upcoming events and you can find out what is next on our socials.
   </Card>
   <Card title="Study Hangout" icon="open-book">
