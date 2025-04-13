@@ -26,6 +26,10 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Minigames',
+					autogenerate: { directory: 'minigames' },
+				},
+				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
