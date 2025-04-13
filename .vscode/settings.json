@@ -5,6 +5,7 @@
     "markdown.editor.filePaste.copyIntoWorkspace": "mediaFiles",
     // Copy pasted files in documentation pages to the `src/assets/` directory.
     "markdown.copyFiles.destination": {
-      "/src/content/docs/**/*": "/src/assets/"
+      "/src/content/docs/**/*": "/src/assets/",
+      "/src/content/docs/**/*.mdx": "/src/assets/" // Add this line for .mdx files
     }
 }

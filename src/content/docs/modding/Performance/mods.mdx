@@ -1,0 +1,76 @@
+---
+title: Performance Mods
+description: A reference page in my new Starlight docs site.
+---
+import { LinkCard, Aside } from '@astrojs/starlight/components';
+
+This is based on the [Install of Alternatives](https://prismlauncher.org/wiki/getting-started/install-of-alternatives/) page from PrismLauncher
+
+<LinkCard title="Why we dont reccomend Optifine" icon="discord"/>
+
+### Installing things
+
+To install mods, see the [Installing mods](../../installing-mods) page.
+
+##  Fabric/Quilt Mods
+
+<div class="notification type-info">
+Most Fabric mods require the <a href="https://modrinth.com/mod/fabric-api">Fabric API</a> mod in order to work, while most Quilt mods require <a href="https://modrinth.com/mod/qsl">Quilted Fabric API</a> to work.
+</div>
+
+###  Sodium
+
+[Sodium](https://modrinth.com/mod/sodium) is a mod that greatly improves render performance through various optimizations. We **highly recommend** installing it when possible.
+
+If you use Sodium often, please consider supporting development of the mod by [donating](https://jellysquid.me/donate) to the developer!
+
+###  Iris
+
+[Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md#shaders-that-do-not-work-on-iris).
+
+###  Other Mods
+
+If you want to further improve your performance, please also consider installing [Lithium](https://modrinth.com/mod/lithium) and [Starlight](https://modrinth.com/mod/starlight)! Do note that Starlight is no longer needed client-side if you're playing on Minecraft 1.20 or higher, as Mojang has optimized their lighting engine since then.
+
+If you would like to go a bit further, LambdAurora maintains a very detailed list of OptiFine alternatives for Fabric and Quilt, which you can find [here](https://lambdaurora.dev/optifine_alternatives/). There's also a list of mods made by the Additive modpack [here](https://github.com/skywardmc/additive/wiki/Give-up-OptiFine), which provides the Minecraft versions that each mod supports along with some extra information.
+
+##  Forge/NeoForge Mods
+
+### Sodium
+
+[Sodium](https://modrinth.com/mod/sodium) is a mod that greatly improves render performance through various optimizations. We **highly recommend** installing it when possible.
+
+If you use Sodium often, please consider supporting development of the mod by [donating](https://jellysquid.me/donate) to the developer!
+
+###  Iris
+
+[Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md#shaders-that-do-not-work-on-iris).
+
+
+## Older Ports - use for versions older than 1.21.1
+
+<Aside type="caution">
+<strong>Unlike on Fabric/Quilt, most unofficial ports of OptiFine alternatives for Forge might have some compatibility/stability issues.</strong>
+
+While on some modpacks/with some mods they&#39;re going to work good, with others they might be <em>very</em> unstable so be well aware of what you&#39;re doing. If you have issues, use OptiFine.
+
+You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> to run many Fabric mods on Forge.
+
+<strong>Don&#39;t report issues with those on upstream&#39;s Discord support channels!</strong>
+</Aside>
+
+###  Embeddium
+
+[Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We generally recommend using it instead of Rubidium. Be aware of the statements above before using it.
+
+###  Rubidium
+
+[Rubidium](https://modrinth.com/mod/rubidium) is a Sodium port for Forge. Be aware of the statements above before using it.
+
+###  Oculus
+
+[Oculus](https://modrinth.com/mod/oculus) is an Iris port for Forge. Be aware of the statements above before using it.
+
+### Other mods
+
+You can find a list of performance mods for Forge [here](https://github.com/NordicGamerFE/usefulmods#performance-and-bug-fixing-mods).

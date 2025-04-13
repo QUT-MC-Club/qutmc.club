@@ -23,16 +23,38 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Introduction', slug: 'start/introduction' },
+						{ label: 'Rules', slug: 'start/rules' },
 						{ label: 'Joining', slug: 'start/joining' },
 					],
 				},
 				{
 					label: 'Minigames',
-					autogenerate: { directory: 'minigames' },
+					items: [
+						{ label: 'Overview', slug: 'minigames/overview' },
+						{ label: 'Party System', slug: 'minigames/party-system' },
+						{
+							label: 'Guides',
+							collapsed: true,
+							autogenerate: { directory: 'minigames/Guides' },
+						},
+					],
 				},
 				{
-					label: 'Minigames',
-					autogenerate: { directory: 'minigames' },
+					label: 'Survival',
+					items: [
+						{ label: 'Overview', slug: 'survival/overview' },
+						{ label: 'Custom Additions', slug: 'survival/server-additions' },
+						{ label: 'Polydex (Recipe Viewer)', slug: 'survival/polydex' },
+						{
+							label: 'Claiming',
+							autogenerate: { directory: 'survival/Claiming' },
+						},
+						{
+							label: 'Guides',
+							collapsed: true,
+							autogenerate: { directory: 'survival/Guides' },
+						},
+					],
 				},
 				{
 					label: 'Modding',

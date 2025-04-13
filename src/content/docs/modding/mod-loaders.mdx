@@ -1,0 +1,40 @@
+---
+title: Mod Loaders
+description: A reference page in my new Starlight docs site.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Mod loaders are systems that load the .jar files from a provider. Below are the most popular mod loaders:
+
+- [Fabric](https://fabricmc.net/)
+- ~~[Forge](files.minecraftforge.net)~~ - Use NeoForge instead for newer versions.
+- [NeoForge](neoforged.net)
+- [Quilt](https://quiltmc.org/en/)
+
+<Aside type="note">
+    Neoforge is a continuation of Forge with the same developers -1 due to a disagreement with the original creator. Use NeoForge in versions 1.21+, and use Forge for older versions.
+
+    Quilt is a fork of Fabric and is able to load Fabric mods. Quilt tends to lag slightly behind on version updates and may have slight incompatibilites. There is some Quilt specific mods but not many. Quilt is not a continuation like NeoForge, its based on a community management disagreement and has a different development team and goals.
+</Aside>
+
+## Mod Compatibility
+
+Fabric and Quilt mods are compatible for the most part, Quilt mods arent compatible with Fabric [without modification](#quilt-porting). It is possible to run Fabric mods on NeoForge with [Sinytra Connector](https://modrinth.com/mod/connector) however this is generally not advised
+
+## What should I use?
+
+We reccomend the usage of Fabric, as this is what our server network is based on and it generally has the most stable performance mods. However forge clients will still work on our server and some larger mods/modpacks may require forge.
+
+If you arent making a modpack yourself and want to use someone elses this isnt your decision. Do not change the modloader they have picked as it will be based on what is compatible with the mods they are using.
+
+## What is FabricAPI and is it required? 
+
+If you are using Fabric you should download FabricAPI. It isnt neccessarily strictly required but Majority of fabric mods will need it to function.
+
+Quilt also has Quilted Fabric API (QFAPI) and Quilt Standard Libraries (QSL) which you would want instead for Quilt.
+## Extra
+
+### Quilt Porting
+
+Some Quilt mods are just ports of Fabric mods with a changed gradle script. This makes it possible to reverse the requirement on Quilt. This requires basic Fabric mod development knowledge to do. Quilt mods that this method doesnt work on use Quilt specific libraries and features that arent possible or as simple to do on Fabric.
