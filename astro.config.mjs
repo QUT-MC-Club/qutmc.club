@@ -67,8 +67,8 @@ export default defineConfig({
 		"/discord": "https://discord.gg/YXYtac2y2D",
 		"/facebook": "https://www.facebook.com/qutmc/",
 		"/instagram": "https://www.instagram.com/qutminecraft/",
-		"/twitch": "https://discord.gg/YXYtac2y2D",
-		"/modrinth": "https://discord.gg/YXYtac2y2D",
-		"/github": "https://discord.gg/YXYtac2y2D"
+		"/twitch": "https://www.twitch.tv/qutminecraft",
+		"/modrinth": "https://modrinth.com/user/qutminecraftclub",
+		"/github": "https://github.com/QUT-MC-Club"
 	}
 });

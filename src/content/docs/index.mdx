@@ -15,11 +15,11 @@ hero:
       link: https://qutmc.tebex.io
       icon: external
 ---
+import '../index.css';
 import Steve from '../../public/steve.webm';
 
-import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
-
-## About 
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import Card from '../../components/Card.astro';
 
 <CardGrid stagger>
 	<Card title="30+ Minigames" icon="puzzle">
@@ -47,14 +47,14 @@ import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
 
 ## Socials
 <CardGrid>
-	<LinkCard title="Discord" icon="discord"/>
-	<LinkCard title="Facebook" icon="facebook"/>
-	<LinkCard title="Instagram"/>
-  <LinkCard title="Twitch" icon="setting"/>
+	<LinkCard title="Discord" icon="discord" href="https://qutmc.club/discord"/>
+	<LinkCard title="Facebook" icon="facebook" href="https://qutmc.club/facebook"/>
+	<LinkCard title="Instagram" href="https://qutmc.club/instagram"/>
+  <LinkCard title="Twitch" icon="setting" href="https://qutmc.club/twitch"/>
 </CardGrid>
 
 ## Development
 <CardGrid>
-  <LinkCard title="Modrinth" icon="setting"/>
-  <LinkCard title="Github" icon="setting"/>
+  <LinkCard title="Modrinth" icon="setting" href="https://qutmc.club/modrinth"/>
+  <LinkCard title="Github" icon="setting" href="https://qutmc.club/github"/>
 </CardGrid>
