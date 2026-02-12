@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'QUT MC Club',
+			title: 'Cobbled Community',
 			social: {
 				discord: 'https://github.com/withastro/starlight',
 				github: 'https://github.com/withastro/starlight',
@@ -64,11 +64,6 @@ export default defineConfig({
 		}),
 	],
 	redirects: {
-		"/discord": "https://discord.gg/YXYtac2y2D",
-		"/facebook": "https://www.facebook.com/qutmc/",
-		"/instagram": "https://www.instagram.com/qutminecraft/",
-		"/twitch": "https://www.twitch.tv/qutminecraft",
-		"/modrinth": "https://modrinth.com/user/qutminecraftclub",
-		"/github": "https://github.com/QUT-MC-Club"
+		"/discord": "https://discord.gg/AjwAmg8Rmn"
 	}
 });
